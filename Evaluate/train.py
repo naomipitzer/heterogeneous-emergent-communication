@@ -170,7 +170,7 @@ if not dynamic:
             star = torch.tensor(embeddings[np.where(labels == 4)[0][0]], dtype=torch.float32)
             triangle = torch.tensor(embeddings[np.where(labels == 5)[0][0]], dtype=torch.float32)
     
-    
+
             emb_set = torch.stack([circle, heart, hexagon, square, star, triangle], dim=0).squeeze(1)
             print("Audio shape: "+str(emb_set.shape))
         if not unimodal:
@@ -910,8 +910,6 @@ def evaluate_final(sender, receiver, test_loader, baseline_sen, baseline_rec):
     track_conversation_length(conv_lengths)
     return conv_lengths
 
-evaluate_final(sender,receiver,test_loader,baseline_sen,baseline_rec)
-
 
 
 
@@ -961,4 +959,6 @@ if __name__ == "__main__":
     # with open('test_dataset.pkl', 'rb') as f:
     #     test_dataset = pickle.load(f)
     # test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
+
+    evaluate_final(sender,receiver,test_loader,baseline_sen,baseline_rec)
 
