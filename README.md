@@ -65,3 +65,17 @@ Code to evaluate interoperability between modalities can be found in Evaluate/ev
 Details are provided in the [synthetic data documentation](https://github.com/naomipitzer/heterogeneous-emergent-communication/tree/main/DataPrep/synthetic), found in the DataPrep folder.
 
 
+## Citation
+
+To cite this work:
+```
+@misc{pitzer2026learningcommunicatemodalitiesperceptual,
+      title={Learning to Communicate Across Modalities: Perceptual Heterogeneity in Multi-Agent Systems}, 
+      author={Naomi Pitzer and Daniela Mihai},
+      year={2026},
+      eprint={2601.22041},
+      archivePrefix={arXiv},
+      primaryClass={cs.MA},
+      url={https://arxiv.org/abs/2601.22041}, 
+}
+```
